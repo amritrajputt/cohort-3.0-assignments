@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz App</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    #Main {
+      background-color: #fff;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: left;
+      width: 350px;
+    }
+
+    #question {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      font-size: 16px;
+      margin: 8px 0;
+      cursor: pointer;
+    }
+
+    #submit {
+      margin-top: 15px;
+      height: 35px;
+      width: 100%;
+      font-size: 16px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.2s ease-in-out;
+    }
+
+    #submit:hover {
+      background-color: #0056b3;
+    }
+
+    #reload {
+      margin-top: 15px;
+      height: 35px;
+      width: 100%;
+      font-size: 16px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.2s ease-in-out;
+    }
+
+    #reload:hover {
+      background-color: #1e7e34;
+    }
+  </style>
+</head>
+<body>
+  <div id="Main">
+    <div id="question"></div>
+    <div id="option"></div>
+    <button id="submit">Submit</button>
+  </div>
+
+  <script type="module" src="quizApp.js"></script>
+</body>
+</html>
