@@ -4,7 +4,6 @@ const express = require('express');
 const app = express();
 
 function logRequests(req, res, next) {
-    // write the logic for request log here
      console.log(`${req.method} ${req.url}`);
      next();
 }
